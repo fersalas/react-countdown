@@ -1,0 +1,43 @@
+.countdown {
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.countdown::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+}
+
+.countdown__unit {
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-align: center;
+  margin:0 5px;
+  width: 90px;
+  
+}
+
+.countdown__unit span {
+  display: block;
+}
+
+.countdown__unit .value {
+  font-size: 2em;
+}
+
+.countdown__unit .label {
+  font-size: 1em;
+  color: #b2b2b2;
+  font-weight: bold;
+  line-height: 1.3;
+}
